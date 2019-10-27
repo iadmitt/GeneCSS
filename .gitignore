@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Venv
+venv/
+
+# Code workspace
+*.code-workspace
+
+# Vs code
+*.vscode/
+
+# Instance Folder - used for configuration parameters
+instance/
+
+# Database Folder
+db/
+
+# Node modules Folder
+node_modules/
+
+# Package lock
+package-lock.json
+
+# Babel configurations
+babel.config.js

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+	border: 0;
+    margin: 0;
+}   
+
+html {
+    /* font-size set to 62.5% so that 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5em; 
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+main,
+.main {
+    /* 100vh - ( (min-height of header) + (min-height of footer) ) */
+    min-height: calc(100vh - 280px);
+}
+
+main::after,
+.main::after {
+    /* Clearfix */
+    content: '';
+    display: block;
+    clear: both;    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

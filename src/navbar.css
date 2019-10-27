@@ -1,0 +1,73 @@
+/* Navbar */
+nav,
+.navbar {
+    position: relative;
+    /* If changed, also change line-height of navbar-item to match this height */
+    height: 70px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+nav::after,
+.navbar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navbar-left,
+.navbar-right {
+    display: none;
+    position: absolute;
+}
+
+.navbar-left { left: 0; }
+.navbar-right { right: 0; }
+
+.navbar-left::after,
+.navbar-right::after,
+.navbar-left ul::after,
+.navbar-right ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navbar-item {
+    display: block;
+    float: left;
+    margin-left: 1.5rem;
+    /* Set line-height equal to height of navbar */
+    line-height: 70px;
+    cursor: pointer;
+    text-align: center;    
+}
+
+.navbar-item:first-child {
+    margin-left: 0;
+}
+
+/* Hamburger */
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 20px;
+    height: 3px;
+    margin-top: 3px;
+    background: white;
+}
+
+@media screen and (min-width: 400px) {
+    .hamburger { display: none; }
+    .navbar-left,
+    .navbar-right { display: block;}
+}

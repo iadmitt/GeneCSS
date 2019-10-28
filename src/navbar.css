@@ -1,15 +1,13 @@
 /* Navbar */
-nav,
-.navbar {
-    position: relative;
+.navbar-container {
     /* If changed, also change line-height of navbar-item to match this height */
     height: 70px;
+    position: relative;
     margin: 0 auto;
     width: 90%;
 }
 
-nav::after,
-.navbar::after {
+.navbar-container::after {
     content: '';
     display: block;
     clear: both;

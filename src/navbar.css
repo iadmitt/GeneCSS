@@ -1,16 +1,11 @@
 /* Navbar */
+
 .navbar-container {
     /* If changed, also change line-height of navbar-item to match this height */
     height: 70px;
     position: relative;
     margin: 0 auto;
     width: 90%;
-}
-
-.navbar-container::after {
-    content: '';
-    display: block;
-    clear: both;
 }
 
 .navbar-left,
@@ -32,11 +27,11 @@
 }
 
 .navbar-item {
+    /* Set line-height equal to height of navbar */
+    line-height: 70px;
     display: block;
     float: left;
     margin-left: 1.5rem;
-    /* Set line-height equal to height of navbar */
-    line-height: 70px;
     cursor: pointer;
     text-align: center;    
 }

@@ -48,33 +48,56 @@
 
 /* Flexible Grid */
 
+/* One-Fourth Grid:  1/4 -> 1/3 -> 1/2 -> 1 */
+/* One-Third Grid:   1/3 -> 1/3 -> 1/2 -> 1 */
+/* One-Sixth Grid:   1/6 -> 1/5 -> 1/4 -> 1/3 */
+
 .grid {
     width: 100%;
     float: left;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 400px) {
+    .grid { margin-left: 4%; }
+
+}
+
+@media screen and (max-width: 400px) {
+    .one-sixth.grid                      { width: 30.6666666667%; margin-left: 4%; }
+
+    .one-sixth.grid:nth-of-type(3n+1)    { margin-left: 0; }
 }
 
 @media screen and (min-width: 400px) and (max-width: 800px) {
-    .grid {
-        width: 48%;
-        margin-left: 4%;
-    }
+    .one-fourth.grid                     { width: 48% }
+    .one-third.grid                      { width: 48%; }
+    .one-sixth.grid                      { width: 22%; }
 
-    .grid:nth-of-type(2n+1) { margin-left: 0; }
+    .one-fourth.grid:nth-of-type(2n+1),
+    .one-third.grid:nth-of-type(2n+1),
+    .one-sixth.grid:nth-of-type(4n+1)    { margin-left: 0; }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-    .grid {
-        width: 30.6666666667%;
-        margin-left: 4%;
-    }
-    .grid:nth-of-type(3n+1) { margin-left: 0; }
+    .one-fourth.grid                     { width: 30.6666666667%; }
+    .one-third.grid                      { width: 30.6666666667%; }
+    .one-sixth.grid                      { width: 16.8%; }
+    
+    
+    .one-fourth.grid:nth-of-type(3n+1),
+    .one-third.grid:nth-of-type(3n+1),
+    .one-sixth.grid:nth-of-type(5n+1)    { margin-left: 0; }
 
 }
 
 @media screen and (min-width: 1000px) {
-    .grid {
-        width: 22%;
-        margin-left: 4%;
-    }
-    .grid:nth-of-type(4n+1) { margin-left: 0; }
+    .one-fourth.grid                     { width: 22%; }             
+    .one-third.grid                      { width: 30.6666666667%; }
+    .one-sixth.grid                      { width: 13.3333333333%; }
+    
+    
+    .one-fourth.grid:nth-of-type(4n+1),
+    .one-third.grid:nth-of-type(3n+1),
+    .one-sixth.grid:nth-of-type(6n+1)    { margin-left: 0; }
 }

@@ -17,7 +17,6 @@
     float: left;
 }
 
-
 @media screen and (min-width: 400px) {
     .column,
     .columns {
@@ -103,6 +102,6 @@
     
     .one-third.grid:nth-of-type(3n+1),
     .one-fourth.grid:nth-of-type(4n+1),
-    .one-fifth.grid:nth-of-type(5n+1)
+    .one-fifth.grid:nth-of-type(5n+1),
     .one-sixth.grid:nth-of-type(6n+1)    { margin-left: 0; }
 }

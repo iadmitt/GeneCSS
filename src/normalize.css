@@ -37,3 +37,9 @@ img {
     height: auto;
     display: block;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}

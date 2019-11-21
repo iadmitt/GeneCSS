@@ -6,6 +6,8 @@
     position: relative;
     margin: 0 auto;
     width: 90%;
+    max-width: 1280px;
+
 }
 
 .navbar-left,
@@ -63,4 +65,8 @@
     .hamburger { display: none; }
     .navbar-left,
     .navbar-right { display: block;}
+}
+
+@media screen and (min-width: 1280px) {
+    .navbar-container { width: 100% }
 }
